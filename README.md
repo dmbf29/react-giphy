@@ -1,30 +1,89 @@
-# react-boilerplate
+# React Giphy Search
 
-Simple react starter with the following config:
+A dynamic React application that allows users to search and browse GIFs using the Giphy API. Features a clean, responsive interface with real-time search functionality and an interactive grid layout.
 
-- React, ReactDOM
-- Webpack 4
-- Babel with es2015 and react presets
-- Bootstrap (css only, loaded from a cdn in `index.html`)
-- work with `.js` or `.jsx` files
-- main `application.scss` stylesheet is imported in `index.js` as a module to enjoy hot reloading
+## 🌟 Features
 
-## Scripts
+- **Real-time Search**: Instant GIF search as you type
+- **Responsive Grid Layout**: Clean 4-column grid that adapts to different screen sizes
+- **Interactive Selection**: Click any GIF to view it in a larger preview pane
+- **Optimized Performance**: Efficient rendering with React components
+- **Modern UI**: Sleek design with smooth animations and hover effects
 
-To start the local Webpack Dev Server (usually on port `8080`):
+## 🚀 Live Demo
 
-```bash
-yarn start
+[View Live Application](https://dmbf29.github.io/react-giphy/) *(GitHub Pages)*
+
+## 🛠️ Technologies Used
+
+- **React 16.2** - Component-based UI library
+- **JavaScript (ES6+)** - Modern JavaScript features
+- **Sass/SCSS** - Enhanced CSS with variables and nesting
+- **Webpack 4** - Module bundling and build process
+- **Babel** - JavaScript transpilation for browser compatibility
+- **Giphy API** - GIF data and search functionality
+- **GitHub Pages** - Deployment and hosting
+
+## 📦 Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/dmbf29/react-giphy.git
+   cd react-giphy
+   ```
+
+2. **Install dependencies**
+   ```bash
+   yarn install
+   ```
+
+3. **Start the development server**
+   ```bash
+   yarn start
+   ```
+   The application will open at `http://localhost:8080`
+
+## 🔧 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `yarn start` | Start the development server with hot reloading |
+| `yarn lint` | Run ESLint to check code quality |
+| `yarn deploy` | Build and deploy to GitHub Pages |
+
+## 🏗️ Project Structure
+
+```
+src/
+├── components/
+│   ├── app.jsx          # Main application component
+│   ├── gif.jsx          # Individual GIF component
+│   └── gifList.jsx      # GIF grid container
+├── index.jsx            # Application entry point
+assets/
+└── stylesheets/
+    └── application.scss # Main stylesheet
 ```
 
-To lint all JavaScript files in the `src` folder:
+## 🎯 Key Features Implemented
 
-```bash
-yarn lint
-```
+- **Component Architecture**: Modular React components for maintainable code
+- **State Management**: Efficient prop passing and event handling
+- **API Integration**: Seamless integration with Giphy's REST API
+- **Responsive Design**: Flexible layouts that work on all devices
+- **Performance Optimization**: Optimized rendering and image loading
 
-To build and deploy your app to `gh-pages` branch on the GitHub repo:
+## 🚀 Deployment
 
+This project is automatically deployed to GitHub Pages using:
 ```bash
 yarn deploy
 ```
+
+The build process uses Webpack to bundle all assets and deploy to the `gh-pages` branch.
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
