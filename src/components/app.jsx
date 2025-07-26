@@ -9,9 +9,9 @@ const GIPHY_API_KEY = 'jhvWr2xzdfoaU7kq0QRr7I0wxwpxaoMB'
 class App extends Component {
   constructor(props) {
     super(props)
-    this.search('baby yoda')
+    this.search('funny')
     this.state = {
-      selectedGifId: "IaWMz9Ln8OWvf66z6k",
+      selectedGifId: "lszAB3TzFtRaU",
       gifs: []
     }
   }
@@ -20,7 +20,7 @@ class App extends Component {
     giphy({ apiKey: GIPHY_API_KEY, https: true })
       .search({
         q: query,
-        limit: 10
+        limit: 12
       }, (err, result) => {
         this.setState({
           gifs: result.data
